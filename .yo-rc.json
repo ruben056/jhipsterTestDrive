@@ -1,0 +1,22 @@
+{
+  "generator-jhipster": {
+    "baseName": "jhipstertemplate",
+    "packageName": "be.rds.com",
+    "packageFolder": "be/rds/com",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": false,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "5f959ccd95c6acf15a06742f47a4918422286559",
+    "testFrameworks": []
+  }
+}
