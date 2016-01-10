@@ -1,0 +1,32 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "timesheet",
+            "otherEntityName": "timesheet",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "description"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "rawUserInput",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "formattedAsTime",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "formattedAsDecimalHours",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160106201730",
+    "dto": "no",
+    "service": "no",
+    "pagination": "no"
+}

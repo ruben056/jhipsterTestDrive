@@ -1,0 +1,56 @@
+<div>
+    <h2>TimeRegistrations</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="timeRegistration.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span>Create a new TimeRegistration</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>RawUserInput</span></th>
+                    <th><span>FormattedAsTime</span></th>
+                    <th><span>FormattedAsDecimalHours</span></th>
+                    <th><span>timesheet</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="timeRegistration in timeRegistrations track by timeRegistration.id">
+                    <td><a ui-sref="timeRegistration.detail({id:timeRegistration.id})">{{timeRegistration.id}}</a></td>
+                    <td>{{timeRegistration.rawUserInput}}</td>
+                    <td>{{timeRegistration.formattedAsTime}}</td>
+                    <td>{{timeRegistration.formattedAsDecimalHours}}</td>
+                    <td>
+                        <a ui-sref="timesheet.detail({id:timeRegistration.timesheet.id})">{{timeRegistration.timesheet.description}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="timeRegistration.detail({id:timeRegistration.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="timeRegistration.edit({id:timeRegistration.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="timeRegistration.delete({id:timeRegistration.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

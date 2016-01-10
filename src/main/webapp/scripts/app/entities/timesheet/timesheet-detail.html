@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span>Timesheet</span> {{timesheet.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span>Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{timesheet.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Month</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{timesheet.month}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Year</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{timesheet.year}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>timesheet2user</span>
+                </td>
+                <td>
+                    {{timesheet.timesheet2user.firstName}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>

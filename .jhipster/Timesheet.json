@@ -1,0 +1,32 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "timesheet2user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "firstName"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "month",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "year",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20160106194041",
+    "dto": "no",
+    "service": "no",
+    "pagination": "no"
+}
