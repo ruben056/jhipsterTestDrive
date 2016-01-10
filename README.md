@@ -1,3 +1,8 @@
+# there was an issue with a breaking change in Karma that did not have a major release! For now downgraded by fixing the version of socket.io in node_modules/karma/package.json
+(remove the ^ before the version number, should probably put it back after it is resolved)
+see also: https://github.com/socketio/socket.io/issues/2368
+The node_modules dir is not commited but so this cannot be find here on github but just to remember i need to change it back locally ...
+
 # jhipstertemplate
 
 This application was generated using JHipster, you can find documentation and help at [https://jhipster.github.io](https://jhipster.github.io).
